@@ -1,4 +1,5 @@
-﻿string[] grid = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+﻿
+string[] grid = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 bool isPlayer1Turn = true;
 int numTurns = 0;
 
@@ -12,18 +13,19 @@ while (!CheckVictory() && numTurns != 9) {
   
   string choice = Console.ReadLine();
 
-  if(grid.Contains(choice) && choice != "X" && choice !="O") {
-    int gridIndex = Convert.ToInt32(choice) -1;
+  if (grid.Contains(choice) && choice != "X" && choice != "O") {
+    int gridIndex = Convert.ToInt32(choice) - 1;
 
     if (isPlayer1Turn)
-      grid[gridIndex] = "X";
+        grid[gridIndex] = "X";
     else
-      grid[gridIndex] ="O";
-    
-    numTurns++;
-  }
+        grid[gridIndex] = "O";
 
-  isPlayer1Turn = !isPlayer1Turn;
+    numTurns++;
+    isPlayer1Turn = !isPlayer1Turn;
+  } else {
+    Console.WriteLine("Invalid input. Please enter a number corresponding to a numbered cell.");
+  }
 }
 
 if (CheckVictory()) 
@@ -50,12 +52,11 @@ bool CheckVictory() {
 }
 
 // Void is an effective tool, it enables us to design a method to carry out operations without returning data
-void PrintGrid(){
-  for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 3; j++) {
-      Console.Write(" " + grid[i * 3 + j] + " " + "|");
+void PrintGrid()
+    {
+        Console.WriteLine($" | {grid[0]} | {grid[1]} | {grid[2]} |");
+        Console.WriteLine(" -------------");
+        Console.WriteLine($" | {grid[3]} | {grid[4]} | {grid[5]} |");
+        Console.WriteLine(" -------------");
+        Console.WriteLine($" | {grid[6]} | {grid[7]} | {grid[8]} |");
     }
-    Console.WriteLine("");
-    Console.WriteLine("------------");
-  }
-}
