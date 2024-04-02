@@ -1,0 +1,15 @@
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/tictactoe.GeneratedMSBuildEditorConfig.editorconfig
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/tictactoe.AssemblyInfoInputs.cache
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/tictactoe.AssemblyInfo.cs
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/tictactoe.csproj.CoreCompileInputs.cache
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/tictactoe.sourcelink.json
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/bin/Debug/net8.0/tictactoe
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/bin/Debug/net8.0/tictactoe.deps.json
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/bin/Debug/net8.0/tictactoe.runtimeconfig.json
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/bin/Debug/net8.0/tictactoe.dll
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/bin/Debug/net8.0/tictactoe.pdb
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/tictactoe.dll
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/refint/tictactoe.dll
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/tictactoe.pdb
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/tictactoe.genruntimeconfig.cache
+/Users/craigeaton/Desktop/full_stack_development/tictactoe/obj/Debug/net8.0/ref/tictactoe.dll
