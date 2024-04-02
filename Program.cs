@@ -26,12 +26,14 @@ while (!CheckVictory() && numTurns != 9) {
   isPlayer1Turn = !isPlayer1Turn;
 }
 
-if (CheckVictory()) {
-    if (!isPlayer1Turn)
-        Console.WriteLine("Player 1 Wins!");
-    else
-        Console.WriteLine("Player 2 Wins!");
-}
+if (CheckVictory()) 
+    {
+        Console.WriteLine(isPlayer1Turn ? "Player 2 Wins!": "Player 1 Wins!");
+    }
+  else
+    {
+        Console.WriteLine("It's a tie!");
+    }
 
 // Bool is used to return a boolean value
 bool CheckVictory() {
@@ -51,9 +53,9 @@ bool CheckVictory() {
 void PrintGrid(){
   for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 3; j++) {
-      Console.Write(grid[i * 3 + j] + "|");
+      Console.Write(" " + grid[i * 3 + j] + " " + "|");
     }
-    Console.WriteLine();
-    Console.WriteLine("------");
+    Console.WriteLine("");
+    Console.WriteLine("------------");
   }
 }
