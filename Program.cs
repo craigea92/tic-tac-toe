@@ -1,7 +1,8 @@
 ﻿string[] grid = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 bool isPlayer1Turn = true;
+int numTurns = 0;
 
-while (!CheckVictory()) {
+while (!CheckVictory() && numTurns != 9) {
   PrintGrid();
 
   if (isPlayer1Turn)
@@ -18,12 +19,21 @@ while (!CheckVictory()) {
       grid[gridIndex] = "X";
     else
       grid[gridIndex] ="O";
+    
+    numTurns++;
   }
 
   isPlayer1Turn = !isPlayer1Turn;
 }
 
-// bool is used to return a boolean value
+if (CheckVictory()) {
+    if (!isPlayer1Turn)
+        Console.WriteLine("Player 1 Wins!");
+    else
+        Console.WriteLine("Player 2 Wins!");
+}
+
+// Bool is used to return a boolean value
 bool CheckVictory() {
   bool row1 = grid[0] == grid[1] && grid[1] == grid[2];
   bool row2 = grid[3] == grid[4] && grid[4] == grid[5];
