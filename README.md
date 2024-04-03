@@ -17,3 +17,5 @@ dotnet run
 
 ## Screenshot
 
+<img width="567" alt="image" src="https://github.com/craigea92/tic-tac-toe/assets/82875984/7cf406fd-32ef-4592-8938-d7ca7e060379">
+
